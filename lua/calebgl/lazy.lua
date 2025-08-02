@@ -19,6 +19,6 @@ require("lazy").setup({
 		{ import = "calebgl.plugins" },
 	},
 	install = { colorscheme = { "default" } },
-	checker = { enabled = true },
+	checker = { enabled = true, notify = false },
+	change_detection = { notify = false },
 })
-
