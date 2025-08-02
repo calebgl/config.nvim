@@ -14,7 +14,15 @@ return {
 				},
 			})
 
-			vim.cmd.colorscheme("rose-pine")
+			-- vim.cmd.colorscheme("rose-pine")
+		end,
+	},
+
+	{
+		"vague2k/vague.nvim",
+		config = function()
+			vim.cmd.colorscheme("vague")
+			vim.cmd.highlight("StatusLine guibg=NONE")
 		end,
 	},
 }
