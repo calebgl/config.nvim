@@ -6,7 +6,7 @@ return {
 		require("conform").setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
-                go = { "golines", "gofumpt", "goimports" }
+				go = { "golines", "gofumpt", "goimports" },
 			},
 		})
 

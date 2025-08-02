@@ -1,5 +1,5 @@
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 vim.g.have_nerd_font = false
 
@@ -8,17 +8,17 @@ vim.o.ignorecase = true
 
 vim.o.number = true
 vim.o.relativenumber = true
-vim.o.mouse = 'a'
+vim.o.mouse = "a"
 
 vim.o.breakindent = true
-vim.o.signcolumn = 'yes'
+vim.o.signcolumn = "yes"
 
 vim.o.updatetime = 250
 
 vim.o.splitright = true
 vim.o.splitbelow = true
 
-vim.o.inccommand = 'split'
+vim.o.inccommand = "split"
 
 vim.o.cursorline = true
 
@@ -36,8 +36,10 @@ vim.o.swapfile = false
 vim.o.backup = false
 vim.o.undofile = true
 
-vim.opt.formatoptions:remove("o")
+-- vim.opt.formatoptions:remove("o")
 
 vim.o.more = false
 
-vim.o.termguicolors = false
+vim.o.termguicolors = true
+
+vim.o.winborder = "single"
