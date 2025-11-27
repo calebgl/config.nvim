@@ -19,12 +19,17 @@ vim.keymap.set("v", "<Leader>r", [[:s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><L
 
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>")
 
-vim.keymap.set("n", "<Leader>x", "<Cmd>so %<CR>")
+vim.keymap.set("n", "<Leader>x", function()
+	vim.cmd("lua " .. vim.fn.getline("."))
+end)
+
+vim.keymap.set("v", "<Leader>x", "<Cmd>.lua<CR>")
+vim.keymap.set("n", "<Leader><Leader>x", "<Cmd>source %<CR>")
 
 vim.keymap.set("n", ",st", function()
 	vim.cmd.new()
 	vim.cmd.wincmd("J")
-	vim.api.nvim_win_set_height(0, 12)
+	vim.api.nvim_win_set_height(0, 10)
 	vim.wo.winfixheight = true
 	vim.cmd.term()
 end)
