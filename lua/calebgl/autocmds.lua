@@ -4,7 +4,6 @@ end
 
 vim.api.nvim_create_autocmd("TextYankPost", {
 	group = augroup("HighlightYank"),
-	pattern = "*",
 	callback = function()
 		vim.highlight.on_yank({
 			"IncSerach",
