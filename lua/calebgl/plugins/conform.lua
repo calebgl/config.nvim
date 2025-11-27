@@ -10,7 +10,7 @@ return {
 			},
 		})
 
-		vim.keymap.set({ "n", "v" }, "<Leader>f", function()
+		vim.keymap.set({ "n", "v" }, "<Leader>lf", function()
 			require("conform").format({ async = true, lsp_format = "fallback" }, function(err)
 				if not err then
 					local mode = vim.api.nvim_get_mode().mode
