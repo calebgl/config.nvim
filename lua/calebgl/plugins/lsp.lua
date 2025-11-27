@@ -53,7 +53,8 @@ return {
 
 		for server_name, config in pairs(servers) do
 			config = vim.tbl_extend("force", {}, { capabilities = capabilities }, config)
-			require("lspconfig")[server_name].setup(config)
+			vim.lsp.enable(server_name)
+			vim.lsp.config(server_name, config)
 		end
 
 		vim.diagnostic.config({
