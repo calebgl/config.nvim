@@ -33,3 +33,8 @@ vim.keymap.set("n", ",st", function()
 	vim.wo.winfixheight = true
 	vim.cmd.term()
 end)
+
+vim.keymap.set("n", ",tt", function()
+	vim.cmd.tabnew()
+	vim.cmd.term()
+end)
