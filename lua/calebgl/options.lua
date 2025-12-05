@@ -36,10 +36,12 @@ vim.o.swapfile = false
 vim.o.backup = false
 vim.o.undofile = true
 
--- vim.opt.formatoptions:remove("o")
-
 vim.o.more = false
 
 vim.o.termguicolors = true
 
 vim.o.winborder = "single"
+
+-- Don't continue comments when pressing o/O
+vim.opt.formatoptions:remove("o")
+
