@@ -130,7 +130,7 @@ require("lazy").setup({
 	},
 
 	{
-		dir = "~/personal/naysayer-colors.nvim",
+		"calebgl/naysayer.nvim",
 		lazy = false,
 		config = function()
 			vim.cmd.colorscheme("naysayer")
